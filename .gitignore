@@ -1,0 +1,13 @@
+# results
+dist
+
+# npm
+node_modules
+
+# Re:View
+*.re
+*.pdf
+*.epub
+
+# proofdict
+.cache

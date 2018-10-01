@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "preset-japanese": true,
+    "preset-jtf-style": true,
+    "proofdict": {
+      "dictURL": "https://azu.github.io/proof-dictionary/"
+    },
+    "prh": {
+      "rulePaths": [
+        "./dictionary.yml"
+      ]
+    }
+  }
+}

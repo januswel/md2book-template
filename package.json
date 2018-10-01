@@ -1,0 +1,23 @@
+{
+  "name": "your book name",
+  "version": "1.0.0",
+  "author": "your name",
+  "description": "description for your book",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:pdf; npm run build:epub",
+    "prebuild": "rm -rf dist review/*.re && ./bin/md2re.sh",
+    "build:pdf": "cd review && review-pdfmaker config.yml",
+    "build:epub": "cd review && review-epubmaker config.yml",
+    "postbuild:pdf": "mkdir -p dist && mv review/*.pdf dist/",
+    "postbuild:epub": "mkdir -p dist && mv review/*.epub dist/",
+    "test": "textlint 'src/**/*.md'"
+  },
+  "devDependencies": {
+    "textlint": "11.0.0",
+    "textlint-rule-preset-japanese": "4.0.0",
+    "textlint-rule-preset-jtf-style": "2.3.1",
+    "textlint-rule-prh": "5.2.0",
+    "textlint-rule-proofdict": "2.0.4"
+  }
+}
