@@ -19,13 +19,15 @@ cd <your working dire>
 # setup Re:View
 review-init review
 cd review
-rm -rf ./images
+mv images/cover.jpg ../images/
+rmdir ./images
 ln -s ../images ./images
 
 # edit your review/catalog.yml
 
 # install npm packages
 cd ..
+# edit package.json
 npm install
 ```
 
@@ -36,6 +38,8 @@ Following line in your markdown will embed sample.png in 50% scale
 ```markdown
 ![0.5:sample](../images/sample.png)
 ```
+
+![0.5:sample](../images/sample.png)
 
 ## Showing line numbers for codes
 
