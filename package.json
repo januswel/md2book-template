@@ -7,8 +7,8 @@
   "scripts": {
     "build": "npm run build:pdf; npm run build:epub",
     "prebuild": "rm -rf dist review/*.re && ./bin/md2re.sh",
-    "build:pdf": "cd review && review-pdfmaker config.yml",
-    "build:epub": "cd review && review-epubmaker config.yml",
+    "build:pdf": "cd review && rake pdf",
+    "build:epub": "cd review && rake epub",
     "postbuild:pdf": "mkdir -p dist && mv review/*.pdf dist/",
     "postbuild:epub": "mkdir -p dist && mv review/*.epub dist/",
     "test": "textlint 'src/**/*.md'"
