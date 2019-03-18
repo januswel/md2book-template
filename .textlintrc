@@ -2,7 +2,7 @@
   "rules": {
     "preset-japanese": true,
     "preset-jtf-style": true,
-    "proofdict": {
+    "@proofdict/proofdict": {
       "dictURL": "https://azu.github.io/proof-dictionary/"
     },
     "prh": {
