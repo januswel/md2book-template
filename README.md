@@ -11,25 +11,9 @@
 
 1. Download a zip from https://github.com/januswel/md2book-template/archive/master.zip
 2. Unzip it to `<your working dir>`
-3. Run following commands
-
-```console
-cd <your working dir>
-
-# setup Re:View
-review-init review
-cd review
-mv images/* ../images/
-rmdir ./images
-ln -s ../images ./images
-
-# edit your review/catalog.yml
-
-# install npm packages
-cd ..
-# edit package.json
-npm install
-```
+3. `cd <your working dir>`
+4. `npm install`
+5. `./bin/setup.sh`
 
 ## Embedding images
 
